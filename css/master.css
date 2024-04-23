@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 110px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background: #eee;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    height: 70px;
+    width: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+header nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+header nav a:hover,
+header nav a.active-link {
+    background: #ddd;
+}
+
+section {
+    padding: 10px;
+}
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 4px;
+}
+
+.cgu-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+}
+
+.cgu-popup .cgu-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}

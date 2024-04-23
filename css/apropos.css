@@ -1,0 +1,23 @@
+@import url(master.css);
+
+.peoples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.people-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.people-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
