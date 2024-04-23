@@ -30,15 +30,14 @@ async function acceptCGU() {
         alert('Vous devez accepter les conditions générales d\'utilisation et la politique de confidentialité pour accéder au site');
         return;
     }
-    /*const response = await fetch('https://ti402-api.docsystem.xyz/tp1/acceptCGU', {
+    const response = await fetch('https://ti402-api.docsystem.xyz/tp1/acceptCGU', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({}),
     });
-    const data = await response.json();*/
-    const data = { success: true }
+    const data = await response.json();
     if (data.success) {
         hideCGUPopup();
         document.cookie = 'TI402_CGU_ALLOWED=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
