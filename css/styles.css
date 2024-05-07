@@ -1,0 +1,89 @@
+body {
+    background-color: #83E8BA;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+header,
+footer {
+    background-image: url(../img/grass.webp);
+    background-size: cover;
+    padding: 15px;
+    text-align: center;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2ecc71;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+section h2 {
+    color: #34495e;
+}
+
+section h2 ~ h3 {
+    color: #34495e;
+}
+
+nav {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #27ae60;
+}
+
+nav a {
+    font-size: 20px;
+    text-shadow: 0 0 4px #333;
+}
+
+nav a:first-child {
+    color: #D4FCC3;
+}
+nav a:nth-child(2) {
+    color: #FFD447;
+}
+nav a:nth-child(3) {
+    color: #02C39A;
+}
+nav a:last-child {
+    color: #EDFF86;
+}
+
+nav a:first-child:hover {
+    background-color: #556c4a;
+}
+nav a:nth-child(2):hover {
+    background-color: #80671a;
+}
+nav a:nth-child(3):hover {
+    background-color: #005e4b;
+}
+nav a:last-child:hover {
+    background-color: #6f7838;
+}
+
+section a {
+    color: #c71bcd;
+}
+
+header img {
+    height: 20vh;
+    width: auto;
+    border-radius: 10px;
+}

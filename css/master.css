@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: sans-serif;
     margin: 0;
     padding-bottom: 110px;
@@ -22,7 +22,6 @@ header img {
 header nav {
     display: flex;
     align-items: flex-end;
-    margin-right: 10px;
 }
 
 header nav a {
@@ -53,7 +52,7 @@ footer {
 
 footer p {
     margin: 4px;
-}
+} */
 
 .cgu-popup {
     display: flex;
