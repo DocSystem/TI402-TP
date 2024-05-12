@@ -26,8 +26,6 @@ function hideCGUPopup() {
 }
 
 async function acceptCGU() {
-    document.cookie = 'TI402_CGU_ALLOWED=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
-    hideCGUPopup();
     if (document.querySelector('#cgu-checkbox').checked === false || document.querySelector('#rgpd-checkbox').checked === false) {
         alert('Vous devez accepter les conditions générales d\'utilisation et la politique de confidentialité pour accéder au site');
         return;
