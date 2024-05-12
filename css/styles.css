@@ -50,6 +50,8 @@ a:hover {
 nav a {
     font-size: 20px;
     text-shadow: 0 0 4px #333;
+    padding: 0 5px;
+    margin: 0 5px;
 }
 
 nav a:first-child {
@@ -84,6 +86,85 @@ section a {
 
 header img {
     height: 20vh;
+    max-width: 80vw;
     width: auto;
     border-radius: 10px;
+}
+
+#definition {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#citation {
+    font-style: italic;
+    color: #555f60;
+}
+
+
+
+#postit {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+#postit > li:first-child,
+#postit > li:first-child ul li {
+    background-color: #779869;
+}
+
+#postit > li:nth-child(2),
+#postit > li:nth-child(2) ul li {
+    background-color: #009603;
+}
+
+#postit > li:nth-child(3),
+#postit > li:nth-child(3) ul li {
+    background-color: #a2ffcc;
+}
+
+#postit > li:nth-child(4),
+#postit > li:nth-child(4) ul li {
+    background-color: #008c70;
+}
+
+#postit > li:last-child,
+#postit > li:last-child ul li {
+    background-color: #a58421;
+}
+
+.postit-item {
+    background-color: white;
+    border: solid 1px #2c3e50;
+    min-width: 200px;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.postit-item ul {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    left: 0;
+    top: 30px;
+}
+
+.postit-item:hover ul {
+    display: block;
+}
+
+.postit-item ul li {
+    background-color: white;
+    border: solid 1px #2c3e50;
+    color: #222;
+    padding: 5px;
 }
