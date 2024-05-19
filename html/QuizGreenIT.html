@@ -18,8 +18,8 @@
             </nav>
         </header>
         <div>
-            <form action="https://ti402-api.docsystem.xyz/tp2/saveForm" method="post">
-                <fieldset>
+            <form action="#" method="post" name="Quiz" class="box" id="QuizId" onsubmit="return false">
+                <fieldset id="informations">
                     <legend>Vos informations</legend>
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom"><br>
@@ -36,8 +36,10 @@
                         <option value="enseignant">Enseignant</option>
                         <option value="admin">Administrateur</option>
                     </select>
+                    <br>
+                    <input type="button" value="Commencer le quiz" onclick="quizAlert()">
                 </fieldset>
-                <fieldset>
+                <fieldset class="quiz">
                     <legend>Quiz sur la GreenIT</legend>
                     <ol>
                         <li>
@@ -53,13 +55,25 @@
                             <input type="checkbox" id="q2r3" name="q2" value="q2r3"><label for="q2r3">c) Optimiser les performances des appareils électroniques.</label><br><br>
                         </li>
                         <li>
-                            Donnez un exemple de pratique de GreenIT :<br><br>
+                            <label for="q3">Donnez un exemple de pratique de GreenIT :</label><br><br>
                             <input type="text" id="q3" name="q3">
                         </li>
                     </ol>
                 </fieldset>
-                <input type="submit" value="Envoyer">
+                <button type="submit" class="quiz" onclick="submitQuiz()">Envoyer</button>
             </form>
+            <main>
+                <table>
+                    <caption>Résultats du Quiz</caption>
+                    <thead>
+                        <tr>
+                            <th>Essai</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </main>
         </div>
         <footer>
             <p>&copy; Gaël Floquet & Antoine Souben-Fink</p>
@@ -67,5 +81,6 @@
             <p><a href="https://www.greenit.fr/">En savoir plus ?</a> - <a href="CGU.html">Conditions Générales d'Utilisation</a> - <a href="RGPD.html">Politique de confidentialité</a></p>
         </footer>
         <script src="/js/force-cgu.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
     </body>
 </html>
