@@ -76,7 +76,20 @@
                 </li>
             </ol>
         </div>
+        <section>
+            <h1>Chatbot - GreenIT</h1>
 
+            <div class="chat-container">
+
+                <div class="chat-box" id="chat-box"></div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Posez votre question...">
+                    <button id="send-btn" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
+                </div>
+            </div>
+
+            <script src="../js/chatbot.js"></script>
+        </section>
         <div>
             <table>
                 <caption>Pratiques de codage efficaces</caption>
